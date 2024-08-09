@@ -95,10 +95,11 @@ Apache Airflow is used to schedule and run the ETL pipeline daily. The pipeline 
     pip install -r requirements.txt
 
 4. **Set Up Apache Airflow**:
-    Follow the instructions to install and configure Apache Airflow in your environment.
+    - Follow the official Apache Airflow installation guide to install and configure Apache Airflow in your environment. Ensure you have version 2.0 or above.
 
 5. **Configure API Key**:
-    Add your News API key in the `Ed_news_1.py` file.
+    - Open the dags/Ed_news_1.py file.
+    - Replace "your_api_key_here" with your actual News API key.
 
 6. **Run the ETL Pipeline**:
     - Start the Airflow web server and scheduler:
