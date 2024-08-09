@@ -49,17 +49,17 @@ The cleaned and structured data is loaded into an SQLite database. The database 
 
 ## Demonstration with Fictionalized Data
 
-To provide a clear demonstration of the ETL pipeline's functionality, the images below showcase how the pipeline processes and transforms fictionalized and masked news data. This demonstrates data masking techniques, ensuring that sensitive information is protected during data processing.
+To provide a clear demonstration of the ETL pipeline's functionality, the images below showcase how the pipeline processes and transforms fictionalized and masked news data. This demonstrates data masking techniques, ensuring that sensitive information is protected during data processing.<br><br>
 
 
 ![JSON Structure for Article](https://github.com/NikkaLuna/AI-News-ETL-Pipeline-with-Airflow/blob/main/JSON%20Structure%20for%20Article.png)
 
-*This image shows the raw JSON data extracted from the News API, specifically representing a news article. This will extract attributes like the article's source, author, title, URL, publication date, and content.*
+*This image shows the raw JSON data extracted from the News API, specifically representing a news article. This will extract attributes like the article's source, author, title, URL, publication date, and content.*<br><br>
 
 
 ![Tabular Representation of Data](https://github.com/NikkaLuna/AI-News-ETL-Pipeline-with-Airflow/blob/main/Tabular%20Representation%20of%20Data.png)
 
-*This image displays the transformed data in a tabular format after it has been structured for loading into the SQLite database, formatting the dates, cleaning author names, and extracting relevant fields from the raw data.*
+*This image displays the transformed data in a tabular format after it has been structured for loading into the SQLite database, formatting the dates, cleaning author names, and extracting relevant fields from the raw data.*<br><br>
 
 ### 4. Automation with Apache Airflow
 
