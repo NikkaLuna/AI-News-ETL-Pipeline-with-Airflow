@@ -86,22 +86,20 @@ Apache Airflow is used to schedule and run the ETL pipeline daily. The pipeline 
 2. **Set Up Virtual Environment**:
     ```bash
     python3 -m venv airflow_env
-    source airflow_env/bin/activate
+    source airflow_env/bin/activate  # On macOS and Linux
+    airflow_env\Scripts\activate.bat  # On Windows
     pip install -r requirements.txt
     ```
 
-3. **Install the required Python packages:
-    ```bash
-    pip install -r requirements.txt
+3. **Set Up Apache Airflow**:
+    - Follow the official Apache Airflow installation guide to install and configure Apache Airflow in your environment.
+    - Ensure you have version 2.0 or above.
 
-4. **Set Up Apache Airflow**:
-    - Follow the official Apache Airflow installation guide to install and configure Apache Airflow in your environment. Ensure you have version 2.0 or above.
-
-5. **Configure API Key**:
+4. **Configure API Key**:
     - Open the dags/Ed_news_1.py file.
     - Replace "your_api_key_here" with your actual News API key.
 
-6. **Run the ETL Pipeline**:
+5. **Run the ETL Pipeline**:
     - Start the Airflow web server and scheduler:
       ```bash
       airflow standalone
@@ -110,7 +108,7 @@ Apache Airflow is used to schedule and run the ETL pipeline daily. The pipeline 
     
 ## Jupyter Notebook
 
-This project includes a Jupyter Notebook (ETL.ipynb) that demonstrates the full implementation of the ETL pipeline. The notebook is used to extract, transform, and load AI-related news articles from the News API into an SQLite database. You can run this notebook locally using Jupyter or any compatible environment.
+This project includes a Jupyter Notebook (ETL.ipynb) that demonstrates the full implementation of the ETL pipeline. The notebook is used to extract, transform, and load AI-related news articles from the News API into an SQLite database. You can run this notebook locally using Jupyter or any compatible environment.  Be sure to activate the virtual environment before running the notebook.
 
 ### Prerequisites:
 
@@ -122,13 +120,14 @@ Ensure you have Jupyter Notebook installed. You can install it using pip:
 Running the Notebook:
 
 1. Navigate to the project directory.
+2. Activate your virtual environment (see Installation and Setup section).
 
-2. Start the Jupyter Notebook server:
+4. Start the Jupyter Notebook server:
     ```bash
     jupyter notebook
     ```
 
-3. Open ETL.ipynb in your browser and follow along with the code cells.
+5. Open ETL.ipynb in your browser and follow along with the code cells.
 
 ## Usage
 
@@ -140,4 +139,4 @@ This repository does not include the full Airflow environment due to size constr
 
 ## Contributions
 
-Feel free to fork this repository and submit pull requests if you have any improvements or new features to suggest.
+Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements or new features. If you encounter any issues, please open an issue on the repository.
