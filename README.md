@@ -1,4 +1,4 @@
-# News ETL Pipeline Using Python and SQLite
+# AI News ETL Pipeline Using Python and SQLite
 
 ## Overview
 
@@ -46,6 +46,18 @@ The transformation process includes cleaning the data and structuring it into a 
 ### 3. Data Loading
 
 The cleaned and structured data is loaded into an SQLite database. The database schema includes fields such as the source, author name, news title, URL, publication date, and content.
+
+### Demonstration with Fictionalized Data
+
+To provide a clear demonstration of the ETL pipeline's functionality, the images below showcase how the pipeline processes and transforms fictionalized and masked news data. This approach demonstrates an understanding of data masking techniques, ensuring that sensitive information is protected during data processing.
+
+![JSON Structure for Article](https://github.com/NikkaLuna/AI-News-ETL-Pipeline-with-Airflow/blob/main/JSON%20Structure%20for%20Article.png)
+
+*This image shows the raw JSON data extracted from the News API, specifically representing a news article. This is directly related to the Data Extraction section of your README, where you mention extracting attributes like the article's source, author, title, URL, publication date, and content.*
+
+![Tabular Representation of Data](https://github.com/NikkaLuna/AI-News-ETL-Pipeline-with-Airflow/blob/main/Tabular%20Representation%20of%20Data.png)
+
+*This image displays the transformed data in a tabular format after it has been structured for loading into the SQLite database. This corresponds to the Data Transformation section of your README, where you discuss the tasks of formatting dates, cleaning author names, and extracting relevant fields from the raw data. The image is also related to the Data Loading section, as it visually represents the final, cleaned data that is ready to be loaded into the SQLite database.*
 
 ### 4. Automation with Apache Airflow
 
