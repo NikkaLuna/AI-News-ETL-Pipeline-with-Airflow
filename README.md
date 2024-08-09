@@ -113,7 +113,7 @@ This project includes a Jupyter Notebook (ETL.ipynb) that demonstrates the full 
 ### Prerequisites:
 
 Ensure you have Jupyter Notebook installed. You can install it using pip:
-    ```bash
+    ```
     pip install notebook
     ```
 
