@@ -133,6 +133,39 @@ Running the Notebook:
 
 Once the pipeline is running, it will automatically extract, transform, and load the latest news articles related to AI into the SQLite database daily. You can query the SQLite database to analyze the data further.
 
+### Example Query
+
+To help you get started with querying the SQLite database, here is a simple example:
+
+**Fetch All Articles Published on a Specific Date:**
+
+```sql
+SELECT title, author, publication_date
+FROM news_articles
+WHERE publication_date = '2024-08-01';
+```
+
+*This query retrieves the title, author, and publication date of all news articles published on August 1, 2024.*
+
+Fetch Articles by a Specific Author:
+
+```sql
+SELECT title, url, publication_date
+FROM news_articles
+WHERE author = 'John Doe';
+```
+*This query returns the title, URL, and publication date of all news articles written by the author "John Doe.*
+
+Fetch the Latest 10 Articles:
+
+```sql
+SELECT title, author, publication_date
+FROM news_articles
+ORDER BY publication_date DESC
+LIMIT 10;
+```
+*This query lists the most recent 10 news articles in the database, ordered by their publication date.*
+
 ## Environment Setup
 
 This repository does not include the full Airflow environment due to size constraints. However, you can easily recreate the environment by following the instructions above to install the required Python packages and configure Apache Airflow.
