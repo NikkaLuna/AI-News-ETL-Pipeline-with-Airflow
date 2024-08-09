@@ -73,6 +73,7 @@ Apache Airflow is used to schedule and run the ETL pipeline daily. The pipeline 
 - SQLite
 - Apache Airflow
 - News API Key
+- Jupyter Notebook
 
 ### Installation Steps
 
@@ -105,6 +106,28 @@ Apache Airflow is used to schedule and run the ETL pipeline daily. The pipeline 
       airflow standalone
       ```
     - Open the Airflow UI, trigger the `news_etl` DAG, and monitor the ETL process.
+    
+## Jupyter Notebook
+
+This project includes a Jupyter Notebook (ETL.ipynb) that demonstrates the full implementation of the ETL pipeline. The notebook is used to extract, transform, and load AI-related news articles from the News API into an SQLite database. You can run this notebook locally using Jupyter or any compatible environment.
+
+### Prerequisites:
+
+Ensure you have Jupyter Notebook installed. You can install it using pip:
+    ```bash
+    pip install notebook
+    ```
+
+Running the Notebook:
+
+1. Navigate to the project directory.
+
+2. Start the Jupyter Notebook server:
+    ```bash
+    jupyter notebook
+    ```
+
+3. Open ETL.ipynb in your browser and follow along with the code cells.
 
 ## Usage
 
