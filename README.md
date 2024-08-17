@@ -172,4 +172,4 @@ This repository does not include the full Airflow environment due to size constr
 
 ## Contributions
 
-Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements or new features. If you encounter any issues, please open an issue on the repository.
+Feel free to fork this repository and submit pull requests with improvements or new features. If you encounter any issues, please open an issue on the repository.
