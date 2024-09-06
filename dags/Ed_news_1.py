@@ -13,7 +13,6 @@ from airflow.operators.python import PythonOperator
 from newsapi import NewsApiClient
 from datetime import datetime, timedelta, time
 
-# Initialize News API client
 news_api = NewsApiClient(api_key='your_api_key')
 
 # Initialize Redis client for caching
@@ -25,12 +24,12 @@ from_date = to_date - timedelta(days=1)
 dag = DAG(
     dag_id="ed_1",
     default_args={'start_date': datetime.combine(from_date, time(0, 0)), 'retries': 1},
-    schedule_interval='@daily',  # Run daily
+    schedule_interval='@daily', 
 )
 
 def fetch_news_with_rate_limiting(query):
     request_count = 0
-    max_requests = 100  # Example rate limit
+    max_requests = 100  
     start_time = time.time()
 
     # Attempt to fetch data from cache
