@@ -47,9 +47,9 @@ The transformation process includes cleaning the data and structuring it into a 
 
 The cleaned and structured data is loaded into an SQLite database. The database schema includes fields such as the source, author name, news title, URL, publication date, and content.
 
-## Demonstration with Fictionalized Data
+## Demonstration with Data
 
-To provide a clear demonstration of the ETL pipeline's functionality, the images below showcase how the pipeline processes and transforms fictionalized and masked news data. This demonstrates data masking techniques, ensuring that sensitive information is protected during data processing.
+To provide a clear demonstration of the ETL pipeline's functionality, the images below showcase how the pipeline processes and transforms news data.
 
 
 ![JSON Structure for Article](https://github.com/NikkaLuna/AI-News-ETL-Pipeline-with-Airflow/blob/main/JSON%20Structure%20for%20Article.png)
